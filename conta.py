@@ -1,6 +1,3 @@
-from click import pass_context
-
-
 class Conta:
     def __init__(self, numero, titular, saldo, limite):
         self.__numero = numero
@@ -20,3 +17,6 @@ class Conta:
     def transfere(self, valor, destino):
         self.saca(valor)
         destino.deposita(valor)
+
+    def inadimplente(self,cliente):
+        pass
